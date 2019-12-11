@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block nav-header %}
+<ul class="list-unstyled home-header-nav__list">
+    <li><a href="{% url 'index' %}">Home</a></li>
+    <li class="list_about">Blog</li>
+    <li><a href="{% url 'mentor' %}">Mentor</a></li>
+    <li><a href="{% url 'mentee' %}">Mentee</a></li>
+    <li><a href="{% url 'author' %}">Author</a></li>
+</ul>
+{% endblock %}
+
+{% block section %}
+<div class="form-page">
+    <a href="{% url 'form' %}">Input Blog</a>
+</div>
+
+{% for blog in blogs %}
+    <div class="row align-items-center">
+        <div class="col-md-12 blog-article">
+            <img src="{{blog.picture}}" alt="">
+            <h2>{{blog.judul}}</h2>
+            <h6>{{blog.tanggal}}</h6>
+            <h6>{{blog.artikel}}</h6>
+        </div>
+    </div>
+{% endfor %}
+{% endblock %}

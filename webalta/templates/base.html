@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HOME</title>
+    <link rel="stylesheet" href="{% static 'webalta/css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'webalta/css/bootstrap.min.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-4 alpha-tech">
+                    Alpha Tech Academy
+                </div>
+                <div class="col-md-8 align-items-right">
+                    <div class="home-header-nav">
+                        {% block nav-header %}
+                        {% endblock %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="home-content">
+        <div class="container">
+            <div class="row align-items-center items">
+                <img src="{% static 'webalta/img/title/alpha-logo.png' %}" alt="">
+            </div>
+            <div class="row align-items-center alta">
+                <h1>Alpha Tech Academy</h1>
+            </div>
+            <div class="row align-items-center description">
+                <h5>Alpha Tech Academy is a tech talent incubator that gives everyone (even non IT background) a chance to be a professional Tech Talent within 3 months. Contact Person: Email : academy@alphatech.id Mobile phone: 0877 9609 9530</h5>
+            </div>
+        </div>
+    </div>
+    <section>
+        {% block section %}
+        {% endblock %}
+    </section>
+    <footer>
+        <div class="atas">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <ul class="list-unstyled footer-logo">
+                            <li><h5>Our Product:</h5></li>
+                            <li><img src="{% static 'webalta/img/footer/logo-grey-alphapay.png' %}" alt=""></li>
+                            <li><img src="{% static 'webalta/img/footer/logo-grey-sepulsa.png' %}" alt=""></li>
+                            <li><img src="{% static 'webalta/img/footer/logo-grey-alphabill.png' %}" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bawah">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                            <ul class="list-unstyled footer-contact">
+                                <li><h5>Contact Person:</h5></li>
+                                <li><h6>Mobile phone: 0877 9609 9530.</h6></li>
+                                <li><h6>Email: <a href="#">academy@alphatech.id</a></h6></li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="% static 'webalta/css/bootstrap.min.js' %"></script>
+</body>
+</html>

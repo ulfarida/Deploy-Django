@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block nav-header %}
+<ul class="list-unstyled home-header-nav__list">
+    <li><a href="{% url 'index' %}">Home</a></li>
+    <li><a href="{% url 'blog' %}">Blog</a></li>
+    <li><a href="{% url 'mentor' %}">Mentor</a></li>
+    <li class="list_about">Mentee</li>
+    <li><a href="{% url 'author' %}">Author</a></li>
+</ul>
+{% endblock %}
+
+{% block section %}
+<div class="container">
+    <div class="our-mentee">
+        <h5>Our Mentee</h5>
+    </div>
+    {% for mentee in mentees %}
+    <div class="row">
+        <div class="col-md-5 mentee">
+            <img src="{{mentee.picture}}" alt="">
+        </div>
+        <div class="col-md-7 mentee-desc">
+            <h4>{{mentee.nama}}</h4>
+            <h6>{{mentee.testimoni}}</h6>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block nav-header %}
+<ul class="list-unstyled home-header-nav__list">
+    <li class="list_about">Home</li>
+    <li><a href="{% url 'blog' %}">Blog</a></li>
+    <li><a href="{% url 'mentor' %}">Mentor</a></li>
+    <li><a href="{% url 'mentee' %}">Mentee</a></li>
+    <li><a href="{% url 'author' %}">Author</a></li>
+</ul>
+{% endblock %}
+
+{% block section %}
+<div class="container home">
+    <ul class="list-unstyled home-section">
+        <li>
+            <div class="row align-items-center">
+                <div class="col-md-5">
+                    <img src="{% static 'webalta/img/home/benefit.png' %}" alt="">
+                </div>
+                <div class="col-md-7">
+                    <h5>
+                        Learn awesome tech
+                    </h5>
+                    <h6>
+                        You will learn about many technologies, programming languages back-end apps, microservice concept, build client-side apps, software testing and deploy your apps. Sweet!
+                    </h6>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="row align-items-center">
+                <div class="col-md-5">
+                    <img src="{% static 'webalta/img/home/search-job.png' %}" alt="">
+                </div>
+                <div class="col-md-7">
+                    <h5>Land new job</h5>
+                    <h6>
+                        You will get a chance to be part of our reliable tech team as a Software Engineer, Quality Engineer. Interested in other position, don’t worry, we have plenty of openings! 
+                    </h6>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="row align-items-center">
+                <div class="col-md-5">
+                    <img src="{% static 'webalta/img/home/get-paid.png' %}" alt="">
+                </div>
+                <div class="col-md-7">
+                    <h5>Get paid to learn</h5>
+                    <h6>
+                        Yes, you read that right. No registration fee required to enter this program. Even better, you will receive pocket money just for participating. Cool, right? 
+                    </h6>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div class="row align-items-center">
+        <div class="col-md-5">
+            <img src="{% static 'webalta/img/home/mission.png' %}" alt="">
+        </div>
+        <div class="col-md-7">
+            <ul class="list-unstyled">
+                <li>
+                    <h5>Who Are We?</h5>
+                    <h6>Alpha Tech Academy is a tech talent incubator that gives everyone (even non IT background) a chance to be a professional Tech Talent within 3 months. </h6>
+                </li>
+                <li>
+                    <h5>What is our mission?</h5>
+                    <h6>What is our mission? We want to improve capability Tech Talent in Indonesia.</h6>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row align-items-center learn">
+        <h5>What will you learn?</h5>
+    </div>
+    <div class="row align-items-center list-learn">
+        <div class="col-md-3">
+            <img src="{% static 'webalta/img/home/learn-html.png' %}" alt="">
+        </div>
+        <div class="col-md-3">
+            <img src="{% static 'webalta/img/home/learn-programming.png' %}" alt="">
+        </div>
+        <div class="col-md-3">
+            <img src="{% static 'webalta/img/home/learn-git.png' %}" alt="">
+        </div>
+        <div class="col-md-3">
+            <img src="{% static 'webalta/img/home/learn-api.png' %}" alt="">
+        </div>
+    </div>
+    <div class="row align-items-center list-learn">
+        <div class="col-md-3">
+            <img src="{% static 'webalta/img/home/learn-react.png' %}" alt="">
+        </div>
+        <div class="col-md-3">
+            <img src="{% static 'webalta/img/home/learn-tdd.png' %}" alt="">
+        </div>
+        <div class="col-md-3">
+            <img src="{% static 'webalta/img/home/learn-server.png' %}" alt="">
+        </div>
+        <div class="col-md-3">
+            <img src="{% static 'webalta/img/home/learn-scrum.png' %}" alt="">
+        </div>
+    </div>
+</div>
+{% endblock %}

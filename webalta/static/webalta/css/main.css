@@ -155,14 +155,37 @@ section {
     padding: 30px;
 }
 
+.home-section li {
+    margin : 30px;
+}
+
+.home-description h5{
+    font-family: 'Roboto';
+    font-size: 23px;
+}
+
+.home-description img {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home-description p {
+    padding-right: 100px;
+}
+
+.mission {
+    margin-top: 40px;
+}
 
 .learn h5 {
     font-family: 'Roboto';
-    font-size: 22px;
+    font-size: 23px;
     display: table;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 70px;
 }
 
 .list-learn {
@@ -176,18 +199,11 @@ section {
     margin-right: auto;
     margin-left: auto;
 }
-/* h6 {
-    font-family: 'Roboto';
-    font-size: 15px;
+
+/* .border {
+    border: solid 1px black;
+    
 } */
-
-
-/* .home-section li {
-    padding: 20px;
-    font-family: 'Roboto';
-} */
-
-
 /* =================================
 ==============BLOG===============
 ================================= */
@@ -195,6 +211,7 @@ section {
 .blog-article {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
 }
 
 .blog-article img {
@@ -204,18 +221,23 @@ section {
     width: 625px;
 }
 
-.blog-article h2 {
-    /* display: table; */
+.blog-article h2, .blog-article p, .baca-selengkapnya {
+    font-family: 'Roboto';
     margin-left: 0;
     padding-left: 300px;
     padding-right: 300px;
-
 }
 
-.blog-article h6 {
-    margin-left: 0;
-    padding-left: 300px;
-    padding-right: 300px;
+.form-page h6 {
+    font-family: 'Roboto';
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+}
+
+.tanggal {
+    padding-top: 10px;
 }
 
 
@@ -230,13 +252,28 @@ section {
     margin-bottom: 25px;
 }
 
+
 .our-mentee h5 {
-    font-size: 28px;
+    font-size: 27px;
+    font-family: 'Roboto';
+}
+
+.mentee-desc h5 {
+    font-size: 21px;
+    font-family: 'Roboto';
+}
+
+.mentee-desc h4 {
+    font-size: 27px;
+    font-family: 'Roboto';
+    color: gray;
 }
 
 .mentee img{
-    width: 250px;
-
+    width: 280px;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .mentee, .mentee-desc {
@@ -264,10 +301,11 @@ section {
     padding-top: 20px;
 }
 
-.blog-article p {
-    margin-left: 0;
-    padding-left: 300px;
-    padding-right: 300px;
+.author-desc table {
+    font-family: 'Roboto';
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 20px;
 }
 
 /* ====================================

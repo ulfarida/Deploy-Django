@@ -8,5 +8,6 @@ urlpatterns = [
     path('mentee/', views.mentee, name='mentee'),
     path('author/', views.author, name='author'),
     path('form/', views.form, name='form'),
-    path('input_blog/', views.input_blog, name='input_blog')
+    path('input_blog/', views.input_blog, name='input_blog'),
+    path('blog/<int:blog_id>', views.blogdetail, name='blogdetail')
 ]

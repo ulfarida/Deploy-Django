@@ -1,6 +1,10 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block title %}
+Author
+{% endblock %}
+
 {% block nav-header %}
 <ul class="list-unstyled home-header-nav__list">
     <li><a href="{% url 'index' %}">Home</a></li>
@@ -20,15 +24,49 @@
     </div>
 </div>
 <div class="row align-items-center">
-    <div class="col-md-12 blog-article">
-       <p>Alamat            : Alamat Author</p>
-       <p>Telephone         : Author's Telephone </p>
-       <p>Education         : Author's Education </p>
-       <p>Profession        : Author's Profession </p>
-       <p>Nationality       : Author's Nationality </p>
-       <p>Company           : Author's Company </p>
-       <p>Email             : Author's Email </p>
-       <p>Address           : Author's Address </p>
+    <div class="col-md-12 author-desc">
+        <table>
+            <tr>
+                <td>Alamat</td>
+                <td>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</td>
+                <td>:&ensp;&ensp; Alamat Author</td>
+            </tr>
+            <tr>
+                <td>Telephone</td>
+                <td></td>
+                <td>:&ensp;&ensp; Author's Telephone</td>
+            </tr>
+            <tr>
+                <td>Education</td>
+                <td></td>
+                <td>: &ensp;&ensp;Author's Education</td>
+            </tr>
+            <tr>
+                <td>Profession</td>
+                <td></td>
+                <td>: &ensp;&ensp;Author's Profession</td>
+            </tr>
+            <tr>
+                <td>Nationality</td>
+                <td></td>
+                <td>:&ensp;&ensp; Author's Nationality</td>
+            </tr>
+            <tr>
+                <td>Company</td>
+                <td></td>
+                <td>: &ensp;&ensp;Author's Company</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td></td>
+                <td>: &ensp;&ensp;Author's Email</td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td></td>
+                <td>: &ensp;&ensp;Author's Address</td>
+            </tr>
+        </table>
        <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.314233480313!2d112.60827644979209!3d-7.966441481577961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7882865ded0697%3A0xa77fa961a7c4e4b7!2sSepulsa%20Lodge%20Malang!5e0!3m2!1sen!2sid!4v1575982653632!5m2!1sen!2sid" width="600" height="450" frameborder="0" style="border:0;margin-left:300px;" allowfullscreen=""></iframe>
     </div>
 </div>

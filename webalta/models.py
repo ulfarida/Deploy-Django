@@ -8,7 +8,7 @@ class Mentor(models.Model):
     picture = models.CharField(max_length=1000)
 
     def __str__(self):
-        return "{}".format(self.nama)
+        return self.nama
 
 class Mentee(models.Model):
     nama = models.CharField(max_length=100)
@@ -16,7 +16,7 @@ class Mentee(models.Model):
     picture = models.CharField(max_length=1000)
 
     def __str__(self):
-        return "{}".format(self.nama)
+        return self.nama
 
 class Blog(models.Model):
     judul = models.CharField(max_length=1000)
@@ -25,4 +25,6 @@ class Blog(models.Model):
     tanggal = models.DateField()
 
     def __str__(self):
-        return "{}".format(self.judul)
+        return self.judul
+
+

@@ -27,6 +27,11 @@ def author(request):
 def form(request):
     return render(request, 'webalta/form.html', {})
 
+def blogdetail(request, blog_id):
+    blog = Blog.objects.get(pk=blog_id)
+    var_blog = {'blog' : blog}
+    return render(request, 'webalta/blogdetail.html', var_blog)
+
 def input_blog(request):
     judul = request.POST['judul']
     artikel = request.POST['artikel']

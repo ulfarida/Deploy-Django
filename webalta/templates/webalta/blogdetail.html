@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Blog Article
+{% endblock %}
+
+{% block nav-header %}
+<ul class="list-unstyled home-header-nav__list">
+    <li><a href="{% url 'index' %}">Home</a></li>
+    <li><a href="{% url 'blog' %}">Blog</a></li>
+    <li><a href="{% url 'mentor' %}">Mentor</a></li>
+    <li><a href="{% url 'mentee' %}">Mentee</a></li>
+    <li><a href="{% url 'author' %}">Author</a></li>
+</ul>
+{% endblock %}
+
+{% block section %}
+<div class="row align-items-center">
+    <div class="col-md-12 blog-article">
+        <img src="{{blog.picture}}" alt="">
+        <p class="tanggal">{{blog.tanggal}}</p>
+        <h2>{{blog.judul}}</h2>
+        <p>{{blog.artikel}}</p>
+    </div>
+</div>
+<div class="blog-article"><p><a href="{% url 'blog' %}">Kembali..</a></p></div>
+{% endblock %}

@@ -1,6 +1,10 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block title %}
+Blog
+{% endblock %}
+
 {% block nav-header %}
 <ul class="list-unstyled home-header-nav__list">
     <li><a href="{% url 'index' %}">Home</a></li>
@@ -13,16 +17,18 @@
 
 {% block section %}
 <div class="form-page">
-    <a href="{% url 'form' %}">Input Blog</a>
+    <h6>Input your article. <a href="{% url 'form' %}">Click Here</a></h6>
 </div>
-
 {% for blog in blogs %}
     <div class="row align-items-center">
         <div class="col-md-12 blog-article">
             <img src="{{blog.picture}}" alt="">
+            <p class="tanggal">{{blog.tanggal}}</p>
             <h2>{{blog.judul}}</h2>
-            <h6>{{blog.tanggal}}</h6>
-            <h6>{{blog.artikel}}</h6>
+            <div class = "post_body">
+                {{ blog.artikel|safe|truncatewords:"50"|linebreaks }}
+                <a href="{% url 'blogdetail' blog.id %}" class="baca-selengkapnya">Baca Selengkapnya</a>
+            </div>
         </div>
     </div>
 {% endfor %}

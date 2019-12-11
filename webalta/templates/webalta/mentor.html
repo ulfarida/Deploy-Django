@@ -1,6 +1,10 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block title %}
+Mentor
+{% endblock %}
+
 {% block nav-header %}
 <ul class="list-unstyled home-header-nav__list">
     <li><a href="{% url 'index' %}">Home</a></li>
@@ -24,7 +28,7 @@
         <div class="col-md-7 mentee-desc">
             <h4>{{mentor.nama}}</h4>
             <h5>{{mentor.pekerjaan}}</h5>
-            <h6>{{mentor.testimoni}}</h6>
+            <p>{{mentor.testimoni}}</p>
         </div>
     </div>
     {% endfor %}

@@ -1,6 +1,10 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block title %}
+Mentee
+{% endblock %}
+
 {% block nav-header %}
 <ul class="list-unstyled home-header-nav__list">
     <li><a href="{% url 'index' %}">Home</a></li>
@@ -22,8 +26,8 @@
             <img src="{{mentee.picture}}" alt="">
         </div>
         <div class="col-md-7 mentee-desc">
-            <h4>{{mentee.nama}}</h4>
-            <h6>{{mentee.testimoni}}</h6>
+            <h5>{{mentee.nama}}</h5>
+            <p>{{mentee.testimoni}}</p>
         </div>
     </div>
     {% endfor %}
